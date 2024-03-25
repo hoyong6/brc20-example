@@ -12,5 +12,6 @@ artifacts
 
 .idea
 .vscode
+.DS_Store
 
 config/local.ts
