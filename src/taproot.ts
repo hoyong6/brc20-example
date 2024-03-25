@@ -59,7 +59,7 @@ async function inscriptionMint(
   const seckey = keys.get_seckey(secret);
   // console.log('==私钥seckey==>', seckey);
   // 从私钥里解出公钥
-  const pubkey = keys.get_pubkey(secret, true);
+  const pubkey = keys.get_pubkey(secret);
   console.log('==公钥pubkey==>', pubkey);
 
   const { address, cblock, tpubkey, script, tapleaf } = getAddress(pubkey, network);
